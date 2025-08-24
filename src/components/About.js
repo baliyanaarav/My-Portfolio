@@ -242,9 +242,16 @@ const About = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <ImagePlaceholder>
-              AB
-            </ImagePlaceholder>
+            <img 
+              src={`${process.env.PUBLIC_URL}/self.jpeg`}
+              alt="Aarav Baliyan" 
+              style={{ 
+                width: "300px", 
+                height: "400px", 
+                borderRadius: "20px", 
+                objectFit: "cover" 
+              }} 
+            />
           </AboutImage>
         </AboutContent>
       </AboutContainer>
